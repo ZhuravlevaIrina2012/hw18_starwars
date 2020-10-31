@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+/*header*/
+header, footer {
+  background-color: rgba(60, 69, 67, 0.6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  border-radius: 15px 15px 0 0;
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header > h1 {
+  font-size: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-danger {
+  background-color: rgba(204, 3, 35, 0.5);
+  font-size: 1em;
+  color: #d8c97b;
 }
 
-.App-link {
-  color: #61dafb;
+/*main*/
+
+.border {
+  border-radius: 0 0 15px 15px;
+  border-color: #d8c97b !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*footer*/
+
+footer {
+  border-radius: 0 0 15px 15px;
+  height: 4em;
+}
+
+footer .btn {
+  font-size: 0.8em;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+textarea{
+  height: 200px;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
